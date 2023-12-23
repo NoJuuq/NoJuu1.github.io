@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/My page/css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/0eae61eaf0.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="gradient-border">
+			<div class="img" id="demo"></div>
+			<p id="text">Do you Love me ?</p>
+			<button type="button" class="yes" id="yes" class="button-85" onclick="myFuction()">
+				Yes
+			</button>
+			<button class="no" id="jump" onmouseenter="jump()">No</button>
+		</div>
+
+		<script>
+			function myFuction() {
+				document.getElementById("demo").style.backgroundImage =
+					"url('https://media.tenor.com/ujmhvYqOKfgAAAAC/mitiaomao-cat.gif')";
+				document.getElementById("demo").style.width = "300px";
+				document.getElementById("demo").style.left = "20%";
+				document.getElementById("demo").style.top = "5%";
+				document.getElementById("text").textContent =
+					"OMG NO WAY THAT AWESOME GIRL LOVES ME IM IN SHOCK ";
+				document.getElementById("text").style.left = "10%";
+				document.getElementById("text").style.top = "50%";
+				document.getElementById("yes").style.visibility = "hidden";
+				document.getElementById("jump").style.visibility = "hidden";
+			}
+			function jump() {
+				var x = Math.round(Math.random() * 101) + "%",
+					y = Math.round(Math.random() * 101) + "%";
+				document.getElementById("jump").style.left = x;
+				document.getElementById("jump").style.top = y;
+			}
+		</script>
+	</body>
+</html>

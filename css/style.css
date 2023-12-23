@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff8dc;
+}
+
+.img {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 25%;
+	background-image: url(../img/uemoo36q0eaqqcmkh14pie1qph.png);
+	background-size: cover;
+}
+p {
+	text-transform: uppercase;
+	position: absolute;
+	top: 40%;
+	left: 8%;
+	font-size: 45px;
+	color: pink;
+}
+
+.yes {
+	
+	top: 60%;
+	left: 10%;
+
+}
+.no {
+	position: absolute;
+	top: 60%;
+	right: 10%;
+}
+
+
+
+/* CSS */
+button{
+  background-color: pink;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100px;
+  height: 50px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:focus {
+  background-color: #F082AC;
+}
+.gradient-border {
+	--border-width: 3px;
+  
+	position: relative;
+	width: 500px;
+	height: 500px;
+	font-family: Lato, sans-serif;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: white;
+	background: #FAEBD7;
+	border-radius: var(--border-width);
+  
+	&::after {
+	  position: absolute;
+	  content: "";
+	  top: calc(-1 * var(--border-width));
+	  left: calc(-1 * var(--border-width));
+	  z-index: -1;
+	  width: calc(100% + var(--border-width) * 2);
+	  height: calc(100% + var(--border-width) * 2);
+	  background: linear-gradient(
+		60deg,
+		hsl(224, 85%, 66%),
+		hsl(269, 85%, 66%),
+		hsl(314, 85%, 66%),
+		hsl(359, 85%, 66%),
+		hsl(44, 85%, 66%),
+		hsl(89, 85%, 66%),
+		hsl(134, 85%, 66%),
+		hsl(179, 85%, 66%)
+	  );
+	  background-size: 300% 300%;
+	  background-position: 0 50%;
+	  border-radius: calc(2 * var(--border-width));
+	  animation: moveGradient 4s alternate infinite;
+	}
+  }
+  
+  @keyframes moveGradient {
+	50% {
+	  background-position: 100% 50%;
+	}
+  }
